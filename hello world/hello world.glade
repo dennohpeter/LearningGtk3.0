@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="window">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Hello World App</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="fixed">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="button">
+            <property name="label" translatable="yes">Click Me</property>
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">250</property>
+            <property name="y">88</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label">
+            <property name="name">Label</property>
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="tooltip_text" translatable="yes">Am hiding here.</property>
+            <property name="label" translatable="yes">
+</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 10"/>
+              <attribute name="style" value="normal"/>
+              <attribute name="weight" value="bold"/>
+              <attribute name="foreground" value="#4e4e9a9a0606"/>
+              <attribute name="background" value="#2e2e34343636"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">488</property>
+            <property name="y">193</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
